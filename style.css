@@ -261,6 +261,7 @@ h6 { font-size: 16px;}
 
 .social-links{
 	display: grid;
+	
 	align-content: center;
 	text-align: center;
 }
@@ -273,7 +274,7 @@ h6 { font-size: 16px;}
 .social-links ul li {
     width: 5%;
     display: inline-block;
-    margin: 0 15px;
+    margin: 15px;
     color: var(--mainText);
 	border: 1px solid rgb(23, 162, 184);
     border-radius: 50%;
