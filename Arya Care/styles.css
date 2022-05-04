@@ -165,6 +165,7 @@
  .infoCards {
      display: flex;
      flex-direction: row;
+     flex-wrap: wrap;U
      justify-content: space-around;
      align-items: center;
      padding: 40px 0 40px 0;
