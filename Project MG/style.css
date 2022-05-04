@@ -950,9 +950,8 @@ hr {
 		border-radius: 15px;
 	}
 
-	#preview{
-		width: 280px;
-
+	.nav__menu{
+		display: none;
 	}
 
 }
