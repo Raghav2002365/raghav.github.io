@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raghav Yadav</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+<section class="s1">
+	<div class="greeting-wrapper">
+		<h1>Viewers Gallery</h1>
+	</div>
+
+	<div class="intro-wrapper">
+		<div class="nav-wrapper">
+
+			<!-- Link around dots-wrapper added after tutorial video -->
+			<a href="index.html">
+				<div class="dots-wrapper">
+					<div id="dot-1" class="browser-dot"></div>
+					<div id="dot-2" class="browser-dot"></div>
+					<div id="dot-3" class="browser-dot"></div>
+				</div>
+			</a>
+			
+
+			<ul id="navigation">
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+    <div class="image-gallery-container">
+		<div class="images">
+
+		<!-- #1 -->
+		<div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Electronic.png" alt="" />
+			<div class="title">Creative & Modern UI Design of E-commerce Application of Electronic Store.</div>
+		  </div>
+		
+		<!-- #2 -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/mexican food.png" alt="" />
+			<div class="title">Modern UI design of Restaurant Application.</div>
+		  </div>
+
+		<!--#3  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Smart light.png" alt="" />
+			<div class="title">Modern UI design Smart Home Application.</div>
+		  </div>
+
+		<!--#4  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Tourism.png" alt="" />
+			<div class="title">Modern UI design Application of Tourism.</div>
+		  </div>
+
+		 <!--#5  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Bikers.png" alt="" />
+			<div class="title">Modern UI design of bike selling Application.</div>
+		  </div>
+  
+		 <!--#6  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/scooter2.png" alt="" />
+			<div class="title">Modern UI design Application of Electric Scooter</div>
+		  </div>
+  
+		 <!--#7  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/food (1).png" alt="" />
+			<div class="title">UI design for Food Ordering Website.</div>
+		  </div>
+  
+		 <!--#8  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/scooter3.png" alt="" />
+			<div class="title">Modern UI design Application of Electric Scooter.</div>
+		  </div>
+  
+		 <!--#9  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Job.png" alt="" />
+			<div class="title">The best way to generate ideas</div>
+		  </div>
+  
+		 <!--#10  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/scooter5.png" alt="" />
+			<div class="title">Modern UI design Application of Electric Scooter.</div>
+		  </div>
+
+		 <!--#11  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Instagram post - 1.png" alt="" />
+			<div class="title">Instagram post Design.</div>
+		  </div>
+
+		 <!--#12  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/Course.png" alt="" />
+			<div class="title">UI Design for Educational Application.</div>
+		  </div>
+
+		<!--#13  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/food.png" alt="" />
+			<div class="title">Food Website Design.</div>
+		  </div>
+
+		<!--#14  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/scooter1.png" alt="" />
+			<div class="title">Scooter selling Website.</div>
+		  </div>
+
+		<!--#15  -->
+		  <div class="image" onclick="showImage(this);">
+			<img src="images/gallery-images/web-service.png" alt="" />
+			<div class="title">web-service</div>
+		  </div>
+		</div>
+  
+		<div class="lightbox">
+		  <div class="image">
+			<img src="images/" alt="" />
+			<div class="title">Testing</div>
+  
+			<div class="previous-btn">
+			  <i class="fas fa-chevron-left"></i>
+			</div>
+  
+			<div class="next-btn">
+			  <i class="fas fa-chevron-right"></i>
+			</div>
+		  </div>
+  
+		  <div class="options">
+			<a href="#" class="download-btn" download>
+			  <i class="fas fa-download"></i>
+			</a>
+  
+			<div class="close-btn">
+			  <i class="fas fa-times"></i>
+			</div>
+		  </div>
+		</div>
+	</div>
+</section> 
+
+		
+<script src="main.js"></script>
+</body>
+</html>
