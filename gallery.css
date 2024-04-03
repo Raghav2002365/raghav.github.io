@@ -139,17 +139,39 @@ body *{
     font-size: 24px;
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
+    .image-gallery-container .images {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 6px;
+    }
+}
+
+@media (max-width: 800px) {
+    .image-gallery-container .images {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 4px;
+    }
+}
+
+@media (max-width: 400px) {
+    .image-gallery-container .images {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 2px;
+    }
+
     .image-gallery-container .lightbox img {
-      width: 90vw;
-      object-fit: cover;
+        height: 70vh;
     }
-  
-    .image-gallery-container .lightbox .next-btn {
-      right: -10px;
+
+    .image-gallery-container .lightbox .title {
+        padding: 16px;
+        font-size: 14px;
     }
-  
+
+    .image-gallery-container .lightbox .next-btn,
     .image-gallery-container .lightbox .previous-btn {
-      left: -10px;
+        font-size: 20px;
+        padding: 6px 12px;
     }
-  }
+}
+
