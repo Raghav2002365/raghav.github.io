@@ -139,39 +139,17 @@ body *{
     font-size: 24px;
   }
   
-  @media (max-width: 1200px) {
-    .image-gallery-container .images {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 6px;
-    }
-}
-
-@media (max-width: 800px) {
-    .image-gallery-container .images {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 4px;
-    }
-}
-
-@media (max-width: 400px) {
-    .image-gallery-container .images {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 2px;
-    }
-
+  @media (max-width: 900px) {
     .image-gallery-container .lightbox img {
-        height: 70vh;
+      width: 90vw;
+      object-fit: cover;
     }
-
-    .image-gallery-container .lightbox .title {
-        padding: 16px;
-        font-size: 14px;
+  
+    .image-gallery-container .lightbox .next-btn {
+      right: -10px;
     }
-
-    .image-gallery-container .lightbox .next-btn,
+  
     .image-gallery-container .lightbox .previous-btn {
-        font-size: 20px;
-        padding: 6px 12px;
+      left: -10px;
     }
-}
-
+  }
