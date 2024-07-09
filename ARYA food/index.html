@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARYA food</title>
+    <title>ARYA Food</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="images/png">
     <!--FONT AWESOME-->
@@ -13,7 +13,7 @@
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,14 +27,14 @@
                 <li><a href="#home_container" class="links">Home</a></li>
                 <li><a href="#special_dishes" class="links">Speciality</a></li>
                 <li><a href="#popular_dishes" class="links">Popular</a></li>
-                <li><a href="#popular_dishes" class="links">Gallery</a></li>
+                <li><a href="#gallery" class="links">Gallery</a></li>
                 <li><a href="#review_section" class="links">Review</a></li>
-                <li><a href="#" class="links">Order Now</a></li>
+                <li><a href="#order_now" class="links">Order Now</a></li>
             </ul>
 
             <div class="nav__icons">
-                <a href="#" class="iconitem"><img src="icons/search-solid.svg" alt="user"></a>
-                <a href="#" class="iconitem"><img src="icons/shopping-cart-solid.svg" alt="user"><span id="cart__total">0</span></a>
+                <a href="#" class="iconitem"><img src="icons/search-solid.svg" alt="search"></a>
+                <a href="#" class="iconitem"><img src="icons/shopping-cart-solid.svg" alt="cart"></a>
                 <a href="#" class="iconitem"><img src="icons/user-solid.svg" alt="user"></a>
             </div>
         </nav>
@@ -45,9 +45,11 @@
     <section id="home_container">
         <div class="home">
             <div class="text_section">
-                <h2>food made with <span>love</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae harum, porro, dicta beatae corrupti aperiam expedita nulla voluptas eligendi quo at nam officiis tempore temporibus quam cupiditate, ipsam libero dolorum.</p>
-                <a href="#" class="btn-2">order now</a>
+                <h2>Food made with <span>love</span></h2>
+                <p>Discover a world of culinary delights at ARYA Food. Our dishes are prepared with the finest
+                    ingredients and a touch of love, ensuring a memorable dining experience every time. Whether you're
+                    craving a juicy burger, a slice of pizza, or something sweet, we've got you covered.</p>
+                <a href="#order_now" class="btn-2">Order Now</a>
             </div>
 
             <div class="img_section">
@@ -67,55 +69,50 @@
     <section id="special_dishes">
         <h2>Our Special <span>Dishes</span></h2>
         <div class="dishes_card">
-            <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_960_720.jpg" alt="Tasty Burger">
-                <h3>Tasty Burger</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+            <div class="card1 primary">
+                <img src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_960_720.jpg"
+                    alt="Tasty Burger">
+                <h3 class="card-title">Tasty Burger</h3>
+                <p class="card-description">Savor the taste of our juicy, flavorful burgers, crafted with premium
+                    ingredients and grilled to perfection.</p>
             </div>
 
             <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="Tasty Burger">
-                <h3>Tasty Pizza</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+                <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="Tasty Pizza">
+                <h3 class="card-title">Tasty Pizza</h3>
+                <p class="card-description">Enjoy our delicious pizzas, topped with fresh ingredients and baked to a
+                    crispy, golden finish.</p>
             </div>
 
             <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2016/08/08/19/47/ice-cream-cone-1579124_960_720.jpg" alt="Tasty Burger">
-                <h3>Cold ice-cream</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/19/47/ice-cream-cone-1579124_960_720.jpg"
+                    alt="Cold Ice-Cream">
+                <h3 class="card-title">Cold Ice-Cream</h3>
+                <p class="card-description">Cool down with our creamy, refreshing ice creams, available in a variety of
+                    delightful flavors.</p>
             </div>
 
             <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776_960_720.jpg" alt="Tasty Burger">
-                <h3>Cold Drinks </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+                <img src="https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776_960_720.jpg" alt="Cold Drinks">
+                <h3 class="card-title">Cold Drinks</h3>
+                <p class="card-description">Quench your thirst with our selection of cold drinks, perfect for any meal
+                    or occasion.</p>
             </div>
 
             <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2014/12/22/12/33/sweets-577230_960_720.jpg" alt="Tasty Burger">
-                <h3>Tasty Sweets</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+                <img src="https://cdn.pixabay.com/photo/2014/12/22/12/33/sweets-577230_960_720.jpg" alt="Tasty Sweets">
+                <h3 class="card-title">Tasty Sweets</h3>
+                <p class="card-description">Indulge in our delectable sweets, crafted to satisfy your sweet tooth with
+                    every bite.</p>
             </div>
 
             <div class="card1">
-                <img src="https://cdn.pixabay.com/photo/2015/08/20/20/07/cereal-898073_960_720.jpg" alt="Tasty Burger">
-                <h3> Healthy Breakfast</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus
-                    nostrum!
-                </p>
+                <img src="https://cdn.pixabay.com/photo/2015/08/20/20/07/cereal-898073_960_720.jpg"
+                    alt="Healthy Breakfast">
+                <h3 class="card-title">Healthy Breakfast</h3>
+                <p class="card-description">Start your day right with our healthy breakfast options, designed to give
+                    you the energy you need.</p>
             </div>
-
-
         </div>
     </section>
     <!-- Our Special Dishes End -->
@@ -124,93 +121,69 @@
     <section id="popular_dishes">
         <h2>Our Popular <span>Dishes</span></h2>
         <div class="popular_foods">
-            <div class="box1">
-                <img src="images/popular_food1.jpg" alt="Tasty Burger">
-                <!-- <h3>Tasty Burger</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus -->
-
-                <!-- </p> -->
+            <div class="box1 primary">
+                <img src="images/popular_food1.jpg" alt="Popular Dish 1">
             </div>
 
             <div class="box1">
-                <img src="images/popular_food2.jpg" alt="Tasty Burger">
-                <!-- <h3>Tasty Cakes</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus -->
-
-                <!-- </p> -->
+                <img src="images/popular_food2.jpg" alt="Popular Dish 2">
             </div>
 
             <div class="box1">
-                <img src="images/popular_food3.jpg" alt="Tasty Burger">
-                <!-- <h3>Tasty Sweets</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus -->
-
-                <!-- </p> -->
+                <img src="images/popular_food3.jpg" alt="Popular Dish 3">
             </div>
 
             <div class="box1">
-                <img src="images/popular_food4.jpg" alt="Tasty Burger">
-                <!-- <h3>Tasty Cupcakes</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Aliquam quos unde dicta, cupiditate fugit dignissimos fugiat asperiores consequuntur nesciunt, ipsum voluptatibus esse inventore sequi labore. Nulla, natus -->
-
-                <!-- </p> -->
+                <img src="images/popular_food4.jpg" alt="Popular Dish 4">
             </div>
         </div>
         <br>
         <br>
         <div class="popular_foods">
-            <div class="box1">
-                <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg" alt="Tasty Burger">
-
+            <div class="box1 primary">
+                <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg"
+                    alt="Popular Dish 5">
             </div>
 
             <div class="box1">
-                <img src="https://cdn.pixabay.com/photo/2018/08/29/19/01/fig-3640553_960_720.jpg" alt="Tasty Burger">
-
+                <img src="https://cdn.pixabay.com/photo/2018/08/29/19/01/fig-3640553_960_720.jpg" alt="Popular Dish 6">
             </div>
 
             <div class="box1">
-                <img src="https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_960_720.jpg" alt="Tasty Burger">
-
+                <img src="https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_960_720.jpg"
+                    alt="Popular Dish 7">
             </div>
 
             <div class="box1">
-                <img src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375_960_720.jpg" alt="Tasty Burger">
-
+                <img src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375_960_720.jpg"
+                    alt="Popular Dish 8">
             </div>
         </div>
     </section>
-
     <!-- Most popular foods end -->
 
-    <!-- processing section start -->
+    <!-- Processing section start -->
     <section id="processing_section">
         <h2>How it <span>Works</span></h2>
         <div class="process_management">
             <div class="card_one">
-                <img src="images/popular_food1.jpg" alt="Tasty Burger">
-                <h3>choose your favourite food</h3>
+                <img src="images/popular_food1.jpg" alt="Choose Food">
+                <h3>Choose Your Favourite Food</h3>
             </div>
 
             <div class="card_one">
-                <img src="https://blog.ipleaders.in/wp-content/uploads/2019/11/foodmitho.jpg" alt="Tasty Burger">
-                <h3>free and fast delivery</h3>
+                <img src="https://blog.ipleaders.in/wp-content/uploads/2019/11/foodmitho.jpg" alt="Free Delivery">
+                <h3>Free and Fast Delivery</h3>
             </div>
 
             <div class="card_one">
-
-
-                <img src="https://tap2pay.me/wp-content/uploads/2019/11/payment-methods-with-circle_23-2147674741-1-750x423.jpg" alt="Tasty Burger">
-                <h3>easy payment methods</h3>
-            </div>
-
-            <div class="card_one">
-                <img src="images/popular_food1.jpg" alt="Tasty Burger">
-                <h3>enjoy your food</h3>
+                <img src="https://tap2pay.me/wp-content/uploads/2019/11/payment-methods-with-circle_23-2147674741-1-750x423.jpg"
+                    alt="Payment Methods">
+                <h3>Easy Payment Methods</h3>
             </div>
         </div>
     </section>
-    <!-- processing section end -->
+    <!-- Processing section end -->
 
     <!-- Customer Review Section Start -->
 
@@ -218,46 +191,49 @@
         <h2>Our Customer <span>Reviews</span></h2>
         <div class="container">
             <div class="container1">
-                <img src="https://cdn.pixabay.com/photo/2016/03/27/17/40/man-1283231_960_720.jpg" alt="Tasty Burger">
-                <h2>Rajiv</h2>
+                <img src="https://cdn.pixabay.com/photo/2016/03/27/17/40/man-1283231_960_720.jpg" alt="Rajiv">
+                <h2 class="name">Rajiv</h2>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, doloribus nulla commodi quo sed modi veritatis. Quis aliquam soluta esse placeat quasi, eum possimus ut nobis reiciendis nisi? Maxime, eos.</p>
+                <p class="review_comments">The food at ARYA Food is simply amazing! The flavors are rich and the quality
+                    is top-notch. Highly recommended!</p>
                 <span>September 24,2021</span>
             </div>
 
             <div class="container1">
-                <img src="https://lh3.googleusercontent.com/M29RtZKwnzlEd-ljmAzPDBtA3dsiLt0LgQlJ7h_MdgUGNTH_sUrS57YsuNZJLBAHDGB4h_s-TrD2riUhUYimlqV94MPqsr7cLQ-v2XAM-2gtnD8DQdJIRmmt9eWb_-rNrCcwdHR6-pIxmRLMlAFXwpztxa5RN8nuvDFjl76eGFs0VemVzDABnpllnDWzfFxU3Url2E4hisr8MJv37KYuq3DV6j-gUuw9Ac0nlX_MAluRQ8zTSeiZXbr75q3MtH5s_l4Nk7GX_fOodtqZPN49RDnZLqKpKACpPsL6FxUhpOSgzYyvqZP3aVCSQuMJsge3wS4P-QpuheX6Cj-cD4_REm55eSDwYIemFl1sxs5ivOu_pa5e3UpYzTZSXq8YWxqdgWFaiT_uQ_v0sJ-UG3dmOsFNI3h2BxssXvWBG1U7gw8LIoQ2GYa7lDab1Y7yID4npJwDfG09MR3C9QPJgAXbfL-IZh9LMTxA1Dr505S9MjjtyIjuXPSTTfE2VjNIO24DezXudrH4YU7vB6x_7MGFZWRF6SbXzdqySr9dQ5g_KAiWrQIdBfqmfDCM9ciIIyJzTuqKOtIT6_HzEstnT_tz7DEyC_urdjvrRIUiYYpGty0JQQurR7EjWuK6yBD1diF3pMcoyRNUz_Vv6dAYyxH2c0oqvQM9EKFH0nIiGxjIorB8FGPL9JoFWgA4hI0dpNnWlBHxgs2W9WptvZ--NWeL4icF=w493-h657-no?authuser=0"
-                    alt="Tasty Burger">
-                <h2>Ayush</h2>
+                <img src="https://img.freepik.com/free-photo/portrait-happy-male-with-broad-smile_176532-8175.jpg?semt=sph"
+                    alt="Ayush">
+                <h2 class="name">Ayush</h2>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star-half-o checked"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, doloribus nulla commodi quo sed modi veritatis. Quis aliquam soluta esse placeat quasi, eum possimus ut nobis reiciendis nisi? Maxime, eos.</p>
+                <p class="review_comments">Absolutely love their burgers and pizzas. The delivery is always fast and the
+                    food arrives hot and fresh.</p>
                 <span>September 24,2021</span>
             </div>
 
             <div class="container1">
-                <img src="https://lh3.googleusercontent.com/72KPjRMjPbxF6LRyQKw6Dk99XkH5ZwY6YEvCNkr61zOOlIUEtZBG2KZ-8j3DIQZIkEE6Ty1BRSncl_flbunP9JlI4DypxSBJkhZr6yUXx-xXZCMFv5WpDIK6NMTVXVFj11PEebSUbHDjAZ2uMcv9Ztw_ndrSH5h5bBzfhdd_7MEPoiGry7it3wTOkkIp2lqxu6Wke0ArUAVlXrP_gz1Hmn4ybSQEU08UZ5_Z8Wvc4V_vzCqVZNgid_gn6YgGzYwt9yf4maA4Jb1RWzkG2mE5K2vPNWfHqV09kpTNU03IIK4WbUT9WOwIuKMBpiAxSAJ2Z-yUtSRj9PHHsh-4d5bU9AIHS6C653eF4lpcJdoO9NwUCI5VxI89-KEJpk2cjI3vBI4Zl_GQYzUAtzGqB7NT6Bzr0kq2yLIRYguDT4UkY5igdP6hZ_LJ6I6P4C6kjWZGIT5RRay9bin1SquyHmYbeV8rDT9qEF2FrfoDkLYYzCAvfTqg3SDF55HTeRGkndp95M8J9cUKWAps-aPEWGrA0O19QPRiAUR3hUxrdbntaxif1G2FbWEGec0iKSqoGrO3MhneR3ayuz6Jru0cYAmAowBxKn-V3Oo9LcpqxVSwKALx72g0IjU6LfcCDpoLir8we70UQWUBVQIo4AzVQLJsgwSxW1NB_V3Tsa52es_5vDwrqFGgRGZ3HLQnHxqhUNcZnexc2a3ryfIszKroPz7zYaG7=w493-h657-no?authuser=0"
-                    alt="Tasty Burger">
-                <h2>Abhisek</h2>
+                <img src="https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?semt=sph"
+                    alt="Abhishek">
+                <h2 class="name">Abhisek</h2>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, doloribus nulla commodi quo sed modi veritatis. Quis aliquam soluta esse placeat quasi, eum possimus ut nobis reiciendis nisi? Maxime, eos.</p>
+                <p class="review_comments">Great variety of dishes and the taste is fantastic. The customer service is
+                    also excellent. Will definitely order again.</p>
                 <span>September 24,2021</span>
             </div>
         </div>
@@ -273,7 +249,6 @@
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
             </div>
 
             <div class="row">
@@ -286,14 +261,22 @@
             </div>
 
             <div class="row">
+                <span><i class="fa fa-phone"></i>&nbsp; +91 12345 67890</span>
+                &nbsp;
+                &nbsp;
+                <span><i class="fa fa-envelope"></i> &nbsp;support@aryafood.com</span>
+            </div>
+
+            <div class="row">
                 ARYA Food © 2021 - All rights reserved || Designed By: Raghav Krishnet
             </div>
         </div>
     </footer>
 
     <script type="text/javascript">
-        function imgSlider(anything) {
-            document.querySelector('.home_food').src = anything;
+        function imgSlider(imageSrc) {
+            const homeFoodImage = document.querySelector('.home_food');
+            homeFoodImage.src = imageSrc;
         }
     </script>
 </body>
