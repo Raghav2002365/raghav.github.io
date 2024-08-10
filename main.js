@@ -6,15 +6,22 @@ const lightboxTitle = document.querySelector(
   ".image-gallery-container .lightbox .title"
 );
 const downloadBtn = document.querySelector(
-  ".image-gallery-container .download-btn"
+  ".download-btn"
 );
+downloadBtn.addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = lightboxImage.src;
+    link.download = lightboxImage.src.split("/").pop(); // This sets the filename to the image's name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
 const nextBtn = document.querySelector(".image-gallery-container .next-btn");
 const previousBtn = document.querySelector(
-  ".image-gallery-container .previous-btn"
+  ".image-gallery-container .prev-btn"
 );
 const closeBtn = document.querySelector(".image-gallery-container .close-btn");
-
-let currentImage = "";
 
 const showImage = (data) => {
   currentImage = data;
@@ -47,3 +54,39 @@ previousBtn.addEventListener("click", () => {
     showImage(currentImage);
   }
 });
+
+const zoomBtn = document.querySelector(".image-gallery-container .zoom-btn");
+const openNewTabBtn = document.querySelector(".image-gallery-container .open-new-tab-btn");
+const fullscreenBtn = document.querySelector(".image-gallery-container .fullscreen-btn");
+
+// Zoom functionality
+zoomBtn.addEventListener("click", () => {
+  // Toggle zoom class or style
+  if (lightboxImage.classList.contains("zoomed")) {
+    lightboxImage.classList.remove("zoomed");
+    zoomBtn.title = "Zoom";
+  } else {
+    lightboxImage.classList.add("zoomed");
+    zoomBtn.title = "Unzoom";
+  }
+});
+
+// Open in new tab functionality
+openNewTabBtn.addEventListener("click", () => {
+  window.open(lightboxImage.src, '_blank');
+});
+
+// Fullscreen functionality
+fullscreenBtn.addEventListener("click", () => {
+  if (lightbox.requestFullscreen) {
+    lightbox.requestFullscreen();
+  } else if (lightbox.mozRequestFullScreen) { 
+    lightbox.mozRequestFullScreen();
+  } else if (lightbox.webkitRequestFullscreen) { 
+    lightbox.webkitRequestFullscreen();
+  } else if (lightbox.msRequestFullscreen) { 
+    lightbox.msRequestFullscreen();
+  }
+});
+
+
