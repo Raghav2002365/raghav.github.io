@@ -55,23 +55,5 @@ function moveCarousel(index) {
     carouselTrack.style.transform = `translateX(${offset}px)`;
 }
 
-// Next button click event
-nextButton.addEventListener('click', () => {
-    if (currentIndex < posts.length - 1) {
-        moveCarousel(currentIndex + 1);
-    } else {
-        moveCarousel(0); // Loop back to the first slide
-    }
-});
-
-// Previous button click event
-prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        moveCarousel(currentIndex - 1);
-    } else {
-        moveCarousel(posts.length - 1); // Loop back to the last slide
-    }
-});
-
 // Start the carousel movement
 setInterval(() => moveCarousel(), 3000);
