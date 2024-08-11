@@ -13,7 +13,7 @@ const downloadBtn = document.querySelector(
 downloadBtn.addEventListener("click", () => {
   const link = document.createElement("a");
   link.href = lightboxImage.src;
-  link.download = lightboxImage.src.split("/").pop(); // This sets the filename to the image's name
+  link.download = lightboxImage.src.split("/").pop(); 
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
