@@ -332,6 +332,71 @@ h6 { font-size: 16px;}
 }
 
 
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+}
+
+.carousel-card {
+    min-width: 10%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+	color: black;
+}
+
+.card-description {
+    font-size: 14px;
+    margin: 10px 0;
+	color: black;
+}
+
+.card-link {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+
+
+
 /* contact section */
 #contact-form{
 	display: block;
@@ -390,6 +455,9 @@ h6 { font-size: 16px;}
 	.main-container{
 		width: 95%;
 	}
+	.carousel-card {
+		flex: 0 0 50%;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -406,6 +474,10 @@ h6 { font-size: 16px;}
 		justify-content: center;
 	}
 
+	.carousel-card {
+		flex: 0 0 100%;
+	}
+
 }
 
 @media screen and (max-width: 400px){
@@ -420,6 +492,10 @@ h6 { font-size: 16px;}
 	#preview{
 		width: 280px;
 
+	}
+
+	.carousel-card {
+		flex:  0 0 100%;
 	}
 
 }
