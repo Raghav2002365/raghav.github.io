@@ -138,8 +138,15 @@ body * {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
   z-index: 10001;
 }
+
+.lightbox .lightbox-header.visible {
+  opacity: 1;
+}
+
 
 .lightbox-header .image-counter {
   font-size: 16px;
@@ -174,8 +181,6 @@ body * {
 .image-gallery-container .lightbox img {
   transition: transform 0.3s ease-in-out;
 }
-
-
 
 @media (max-width: 768px) {
   .image-gallery-container .images {
