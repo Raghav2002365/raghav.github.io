@@ -165,8 +165,9 @@
  .infoCards {
      display: flex;
      flex-direction: row;
-     flex-wrap: wrap;U
-     justify-content: space-around;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 6%;
      align-items: center;
      padding: 40px 0 40px 0;
  }
@@ -427,3 +428,4 @@
      .footer {
          padding-bottom: 40px;
      }
+ }
