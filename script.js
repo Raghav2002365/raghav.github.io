@@ -35,25 +35,60 @@ const posts = Array.from(document.querySelectorAll('.carousel-card'));
 const nextButton = document.querySelector('.next-btn');
 const prevButton = document.querySelector('.prev-btn');
 let currentIndex = 0;
+let isCarouselMoving = true; // Flag to track carousel state
 
 function moveCarousel(index) {
-    if (index !== undefined) {
-        currentIndex = index;
-    } else {
-        currentIndex = (currentIndex + 1) % posts.length;
-    }
+	if (index !== undefined) {
+		currentIndex = index;
+	} else {
+		currentIndex = (currentIndex + 1) % posts.length;
+	}
 
-    // Get the actual width of each card including margin
-    const cardWidth = posts[0].getBoundingClientRect().width;
-    const cardMarginRight = parseFloat(getComputedStyle(posts[0]).marginRight);
-    const totalCardWidth = cardWidth + cardMarginRight;
+	const cardWidth = posts[0].getBoundingClientRect().width;
+	const cardMarginRight = parseFloat(getComputedStyle(posts[0]).marginRight);
+	const totalCardWidth = cardWidth + cardMarginRight;
+	const offset = -currentIndex * totalCardWidth;
 
-    // Calculate the offset for the translation
-    const offset = -currentIndex * totalCardWidth;
-
-    // Move the carousel
-    carouselTrack.style.transform = `translateX(${offset}px)`;
+	carouselTrack.style.transform = `translateX(${offset}px)`;
 }
 
-// Start the carousel movement
-setInterval(() => moveCarousel(), 3000);
+// Start the carousel movement (conditionally)
+let carouselInterval = setInterval(() => {
+	if (isCarouselMoving) {
+		moveCarousel();
+	}
+}, 3000);
+
+// Handle hover events
+carouselTrack.addEventListener('mouseover', () => {
+	isCarouselMoving = false; // Stop autoplay on hover
+});
+
+carouselTrack.addEventListener('mouseout', () => {
+	isCarouselMoving = true; // Resume autoplay on mouseout (if carousel is still moving)
+});
+
+// Handle click events for mobile-friendly scrolling (optional)
+if (window.innerWidth < 768) { // Adjust breakpoint as needed
+	carouselTrack.addEventListener('touchstart', () => {
+		isCarouselMoving = false; // Stop autoplay on touch
+	});
+
+	carouselTrack.addEventListener('touchend', () => {
+		// Optional: Implement mobile-specific scrolling logic here
+		// You could use a library like Swiper.js or Hammer.js for touch gestures
+	});
+}
+
+// Handle next/previous button clicks (optional)
+if (nextButton) {
+	nextButton.addEventListener('click', () => {
+		moveCarousel(currentIndex + 1); // Move to the next card
+	});
+}
+
+if (prevButton) {
+	prevButton.addEventListener('click', () => {
+		moveCarousel((currentIndex - 1 + posts.length) % posts.length); // Wrap around at the beginning
+	});
+}
